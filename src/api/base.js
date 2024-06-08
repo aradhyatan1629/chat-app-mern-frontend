@@ -1,3 +1,3 @@
- const base_url="https://chat-app-mern-frontend-git-main-aradhya-tanejas-projects.vercel.app"
+ const base_url="https://chat-app-mern-6z87.onrender.com"
 
  export default base_url
