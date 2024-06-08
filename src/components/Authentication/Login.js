@@ -7,6 +7,7 @@ import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 import { useHistory } from "react-router-dom";
 import { ChatState } from "../../Context/ChatProvider";
+import base_url from "../../api/base";
 
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -41,7 +42,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "https://chat-app-mern-6z87.onrender.com/api/user/login",
+        `${base_url}/api/user/login`,
         { email, password },
         config
       );
